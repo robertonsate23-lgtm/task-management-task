@@ -64,7 +64,6 @@ def calculate_progress(tasks=tasks):
     """Calculates and reports the ratio of completed tasks to total tasks."""
     total_tasks = len(tasks)
     if total_tasks == 0:
-        print("\nProgress: No tasks available to track.")
         return 0.0
         
     completed_tasks = sum(1 for t in tasks if t["completed"])
